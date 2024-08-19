@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
-import { Container, ContainerForm, Form, Label } from "./styles";
+import { Container, ContainerForm, Form, Label, LabelBottom } from "./styles";
 import Api from "../../services/Api";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 const Cadastro = () => {
   const [data, setData] = useState({
@@ -60,6 +61,7 @@ const Cadastro = () => {
             onChange={InputValue}
           />
           <Button type="submit">Fazer Cadastro</Button>
+          <LabelBottom><Link to='/login'>Já possuo cadastro!</Link></LabelBottom>
         </Form>
       </ContainerForm>
     </Container>

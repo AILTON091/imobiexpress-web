@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
-import { Container, ContainerForm, Form, Label } from "./styles";
+import { Container, ContainerForm, Form, Label,LabelBottom } from "./styles";
 import { AppAuth } from "../../context/AppAuth";
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
   const auth = AppAuth();
@@ -35,6 +37,7 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button type="submit">Fazer Login</Button>
+          <LabelBottom><Link to='/cadastro'>Criar Cadastro!</Link></LabelBottom>
         </Form>
       </ContainerForm>
     </Container>

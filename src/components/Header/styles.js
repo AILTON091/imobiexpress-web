@@ -21,8 +21,9 @@ export const Logo = styled.div`
 export const Menu = styled.div`
   ul{
     display: flex;
-    justify-content:center;
+    justify-content: space-between;
     align-items: center;
+    width:250px;
     li{
       border: 1px solid var(--gray);
       border-radius: 10px;

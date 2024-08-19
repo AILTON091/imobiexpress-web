@@ -28,3 +28,12 @@ export const Label = styled.div`
   margin-bottom: 10px;
   font-weight: 500;
 `
+
+export const LabelBottom = styled.div`
+  width: 100%;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  color: brack;
+  font-size: 16px;
+`
